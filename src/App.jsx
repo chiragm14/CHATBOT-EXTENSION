@@ -33,8 +33,8 @@ const App = () => {
   };
 
   return (
-    <div className="w-[350px] h-[400px] bg-gray-800 rounded-lg p-3 flex flex-col overflow-hidden">
-      <div className="flex-1 overflow-auto space-y-2 mb-2">
+    <div className="w-[350px] h-screen bg-gray-800 rounded-lg p-2 mx-2 my-2 flex flex-col overflow-hidden">
+      <div className="flex-1 overflow-y-auto space-y-2 mb-2">
         {messages.map((msg, idx) => (
           <ChatMessage key={idx} message={msg} />
         ))}
