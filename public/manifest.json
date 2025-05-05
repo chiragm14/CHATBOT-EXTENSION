@@ -4,13 +4,20 @@
     "version": "1.0",
     "description": "A modern Gemini-powered chatbot",
     "action": {
-        "default_popup": "index.html",
-        "default_icon": "icon.png"
+        "default_title": "Open Gemini Chatbot"
     },
-    "permissions": [],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "sidePanel"
+    ],
     "host_permissions": [
         "https://generativelanguage.googleapis.com/"
     ],
+    "side_panel": {
+        "default_path": "index.html"
+    },
     "icons": {
         "48": "icon.png"
     }
